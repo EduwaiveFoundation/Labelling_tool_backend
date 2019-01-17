@@ -21,8 +21,8 @@ from rest_framework import routers
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^categories/all/', views.categoryList.as_view()),
-     url(r'^labelled_images/', views.labelled_imgList.as_view()),
+    url(r'^set_category/', views.categoryList.as_view()),
+    url(r'^labelled_images/', views.labelled_imgList.as_view()),
 ]
 
 
