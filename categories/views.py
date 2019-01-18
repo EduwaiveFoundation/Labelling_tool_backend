@@ -42,7 +42,7 @@ class labelled_imgList(APIView):
     def get(self,request):
         labelled_images=labelled_img.objects.all();
         serializer=labelled_imgSerializer(labelled_images,many=True)
-        dir=self.get_files("/home/sunpriya/Desktop/output")
+        dir=self.get_files("/home/Ximi-Hoque/pdf_classification/output")
         print(serializer.data)
         return Response({'labell':serializer.data,
                             'directory_paths':dir})
