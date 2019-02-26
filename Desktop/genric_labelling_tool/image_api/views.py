@@ -17,7 +17,7 @@ class gltList(APIView):
     def get(self,request):
         global num
         storage_client = storage.Client.from_service_account_json(
-                '/home/sunpriya/Downloads/eduwaivecommon-01cac388cb6b.json')
+                'eduwaivecommon-01cac388cb6b.json')
         bucket = storage_client.get_bucket('eduwaivesgditium')
         inp_params=request.data.keys()
         if 'client' not in inp_params:
